@@ -1,0 +1,8 @@
+- name = Install nginx
+  host = all
+  become = yes
+  task =
+  - name = install nginx
+    ansible.builtin.dnf:
+      name = nginx
+      state= latest
